@@ -1,7 +1,7 @@
 {
     "name": "iClass IoT",
     "version": "0.0.3",
-    "description": "",
+    "description": "MakeCode extension for iClass IoT Wifi Module",
     "dependencies": {
         "core": "*",
         "radio": "*",
