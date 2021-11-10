@@ -1,4 +1,4 @@
-/**
+/** 
  * MakeCode extension for iClass IoT Module
  */
 //% color=#05A6FF icon="\uf1eb" block="iClass IoT"
@@ -9,6 +9,7 @@ namespace iClassIoT {
         basic.pause(wait)
     }
 
+    //% weight=50
     //% block="Initialize iClass IoT TX %tx RX %rx Baudrate %baudrate"
     export function init(tx: SerialPin, rx: SerialPin, baudrate: BaudRate) {
         serial.redirect(tx, rx, baudrate)
@@ -35,6 +36,7 @@ namespace iClassIoT {
         }
     }
 
+    //% weight=40
     //% block="Connect WiFi SSID %ssid Password %password"
     export function connectWiFi(ssid: string, password: string) {
         sendCommand("AT+CWJAP=\"" + ssid + "\",\"" + password + "\"")
@@ -54,6 +56,7 @@ namespace iClassIoT {
         }
     }
 
+    //% weight=30
     //% block="Trigger IFTTT Event Name %eventname Key %key Value 1 %value1 Value 2 %value2 Value 3 %value3"
     export function triggerIFTTT(eventname: string, key: string, value1: string, value2: string, value3: string) {
         sendCommand("AT+CIPSTART=\"TCP\",\"maker.ifttt.com\",80")
@@ -84,4 +87,5 @@ namespace iClassIoT {
             }
         }
     }
+    
 }
