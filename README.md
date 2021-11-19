@@ -1,11 +1,26 @@
+# Makecode Extension for iClass IoT Wifi Module
+This library provides a Microsoft MakeCode extension for iClass IoT Wifi Module
 
-> Open this page at [https://kelieleung.github.io/pxt-iclassiot/](https://kelieleung.github.io/pxt-iclassiot/)
+## Initialize the iClass IoT Wifi Module
+```blocks
+  iClassIoT.init(P0, P1, 9600)
+```
 
-## Use as Extension
+## Connect to WiFi
+Connect to the WiFi
+```blocks
+  iClassIoT.connectWiFi("demo", "testtest")
+```
 
-This repository can be added as an **extension** in MakeCode.
+## Connect to IFTTT
+Trigger the IFTTT event with value(s)
+```blocks
+  iClassIoT.triggerIFTTT("the_event", "ajgfeeefgkgfbejgjkds", "value1", "value2", "value3")
+```
 
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/kelieleung/pxt-iclassiot** and import
+## Supported targets
+
+* for PXT/microbit
+
+## License
+MIT
