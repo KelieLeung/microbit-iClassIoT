@@ -1,5 +1,5 @@
 # Makecode Extension for iClass IoT Wifi Module
-This library provides a Microsoft MakeCode extension for iClass IoT Wifi Module
+This library provides a Microsoft MakeCode extension for iClass IoT Wifi Module, see https://www.iclassict.com/
 
 ## Initialize the iClass IoT Wifi Module
 ```blocks
